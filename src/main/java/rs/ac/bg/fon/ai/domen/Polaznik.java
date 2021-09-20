@@ -98,6 +98,15 @@ public class Polaznik implements Serializable {
     * @param imePrezime Ime i prezime polaznika kao String vrednost.
     */
    public void setIme(String imePrezime) {
+	   if(imePrezime==null) {
+   		throw new NullPointerException("Ime i prezime ne smeju biti null.");
+   	}
+   	if(imePrezime.isEmpty()) {
+   		throw new RuntimeException("Ime i prezime ne smeju biti prazan string.");
+   	}
+      
+	   
+	   
        this.imePrezime = imePrezime;
    }
 
@@ -116,6 +125,13 @@ public class Polaznik implements Serializable {
     * @param tel Telefon polaznika kao String vrednost.
     */
    public void setTel(String tel) {
+	   if(tel==null) {
+   		throw new NullPointerException("Telefon ne sme biti null.");
+   	}
+   	if(tel.isEmpty()) {
+   		throw new RuntimeException("Telefon ne sme biti prazan string.");
+   	}
+      
        this.tel = tel;
    }
 
@@ -134,6 +150,13 @@ public class Polaznik implements Serializable {
     * @param adresa Adresa polaznika kao String vrednost.
     */
    public void setAdresa(String adresa) {
+	   if(adresa==null) {
+   		throw new NullPointerException("Adresa ne sme biti null.");
+   	}
+   	if(adresa.isEmpty()) {
+   		throw new RuntimeException("Adresa ne sme biti prazan string.");
+   	}
+       
        this.adresa = adresa;
    }
    /**
@@ -151,6 +174,13 @@ public class Polaznik implements Serializable {
     * @param pol Pol korisnika kao String vrednost.
     */
    public void setPol(String pol) {
+	   if(pol==null) {
+   		throw new NullPointerException("Pol ne sme biti null.");
+   	}
+   	if(pol.isEmpty()) {
+   		throw new RuntimeException("Pol ne sme biti prazan string.");
+   	}
+       
        this.pol = pol;
    }
    /**

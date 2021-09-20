@@ -95,6 +95,9 @@ public class Clanarina implements Serializable{
      */
 
     public void setTc(TipClanarine tc) {
+    	if(tc==null) {
+    		throw new NullPointerException("Enum ne sme biti null.");
+    	}
         this.tc = tc;
     }
 

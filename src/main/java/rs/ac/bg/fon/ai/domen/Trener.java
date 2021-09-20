@@ -77,6 +77,12 @@ public class Trener implements Serializable{
      * @param  korisnickoIme Korisnicko ime trenera kao String vrednost.
      */
     public void setKorisnickoIme(String korisnickoIme) {
+    	 if(korisnickoIme==null) {
+    	   		throw new NullPointerException("Korisnicko ime ne sme biti null.");
+    	   	}
+    	   	if(korisnickoIme.isEmpty()) {
+    	   		throw new RuntimeException("Korisnicko ime ne sme biti prazan string.");
+    	   	}
         this.korisnickoIme = korisnickoIme;
     }
     /**
@@ -93,6 +99,12 @@ public class Trener implements Serializable{
      * @param sifra Sifra trenera kao String vrednost.
      */
     public void setSifra(String sifra) {
+    	 if(sifra==null) {
+    	   		throw new NullPointerException("Sfra ne sme biti null.");
+    	   	}
+    	   	if(sifra.isEmpty()) {
+    	   		throw new RuntimeException("Sifra ne sme biti prazan string.");
+    	   	}
         this.sifra = sifra;
     }
 

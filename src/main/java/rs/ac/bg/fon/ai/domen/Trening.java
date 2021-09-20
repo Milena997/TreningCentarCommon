@@ -136,6 +136,9 @@ public class Trening implements Serializable {
      */
 
     public void setGrad(Grad grad) {
+    	if(grad==null) {
+    		throw new NullPointerException("Enum ne sme biti null.");
+    	}
         this.grad = grad;
     }
     /**
@@ -153,6 +156,9 @@ public class Trening implements Serializable {
      */
 
     public void setVv(VrstaVezbe vv) {
+    	if(vv==null) {
+    		throw new NullPointerException("Enum ne sme biti null.");
+    	}
         this.vv = vv;
     }
     /**
@@ -187,6 +193,9 @@ public class Trening implements Serializable {
      */
 
     public void setSala(Sala sala) {
+    	if(sala==null) {
+    		throw new NullPointerException("Enum ne sme biti null.");
+    	}
         this.sala = sala;
     }
 
