@@ -55,9 +55,9 @@ public class Polaznik implements Serializable {
     * @param adresa Adresa polaznika kao String vrednost.
     * 
     */
-   public Polaznik(int pid, String ime, String pol, Date datumRodj, String tel,  String adresa) {
+   public Polaznik(int pid, String imePrezime, String pol, Date datumRodj, String tel,  String adresa) {
        this.pid = pid;
-       this.imePrezime= ime;
+       this.imePrezime= imePrezime;
      
        this.pol = pol;
        this.datumRodj = datumRodj;
@@ -97,8 +97,8 @@ public class Polaznik implements Serializable {
     * 
     * @param imePrezime Ime i prezime polaznika kao String vrednost.
     */
-   public void setIme(String ime) {
-       this.imePrezime = ime;
+   public void setIme(String imePrezime) {
+       this.imePrezime = imePrezime;
    }
 
   

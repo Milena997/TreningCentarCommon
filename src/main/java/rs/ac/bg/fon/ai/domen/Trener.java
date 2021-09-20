@@ -38,9 +38,9 @@ public class Trener implements Serializable{
      * @param korisnickoIme Korisnicko ime trenera kao String vrednost.
      * @param sifra Sifra trenera kao String vrednost.
      */
-    public Trener(int tid, String ime, String sifra) {
+    public Trener(int tid, String korisnickoIme, String sifra) {
         this.tid = tid;
-        this.korisnickoIme = ime;
+        this.korisnickoIme = korisnickoIme;
         this.sifra = sifra;
        
     }
@@ -48,7 +48,7 @@ public class Trener implements Serializable{
     /**
      * Vraca id trenera.
      * 
-     * @return  tid Id trenera kao int.
+     * @return tid Id trenera kao int.
      */
 
     public int getTid() {
@@ -58,7 +58,7 @@ public class Trener implements Serializable{
     /**
      * Postavlja id trenera na novu vrednost.
      * 
-     * @param  tid Id trenera kao int.
+     * @param tid Id trenera kao int.
      */
     public void setTid(int tid) {
         this.tid = tid;
@@ -66,7 +66,7 @@ public class Trener implements Serializable{
     /**
      * Vraca korisnickoIme trenera.
      * 
-     * @return  korisnickoIme Korisnicko ime trenera kao String vrednost.
+     * @return korisnickoIme Korisnicko ime trenera kao String vrednost.
      */
     public String getKorisnickoIme() {
         return korisnickoIme;
@@ -90,7 +90,7 @@ public class Trener implements Serializable{
     /**
      * Postavlja sifru trenera na novu vrednost.
      * 
-     * @param  sifra Sifra trenera kao String vrednost.
+     * @param sifra Sifra trenera kao String vrednost.
      */
     public void setSifra(String sifra) {
         this.sifra = sifra;

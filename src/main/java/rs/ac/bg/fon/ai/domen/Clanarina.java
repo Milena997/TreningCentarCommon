@@ -32,7 +32,7 @@ public class Clanarina implements Serializable{
     /**
      * Konstruktor koji inicijalizuje objekat i postavlja vrednosti clanarinaID,iznos i tc na nove vrednosti.
      * 
-     * @param clanarinaId Id clanarine kao int.
+     * @param clanarinaID Id clanarine kao int.
      * @param iznos Iznos clanarine kao double vrednost.
      * @param tc Tip clanarine korisnika kao TipClanarine vrednost.
     */
@@ -73,7 +73,7 @@ public class Clanarina implements Serializable{
     /**
      * Postavlja id clanarine na novu vrednost.
      * 
-     * @param clanarinaId Id clanarine kao int.
+     * @param clanarinaID Id clanarine kao int.
      */
 
     public void setClanarinaID(int clanarinaID) {

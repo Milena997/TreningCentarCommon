@@ -17,7 +17,7 @@ public class Trening implements Serializable {
     /**
 	 * trener kao Trener vrednost.
 	 */
-    private Trener trenenr;
+    private Trener trener;
     /**
 	 * polaznik kao Polaznik vrednost.
 	 */
@@ -56,9 +56,9 @@ public class Trening implements Serializable {
      * @param sala Sala treninga kao Sala vrednost.
      * 
      */
-    public Trening(int trid, Trener trenenr, Polaznik polaznik, VrstaVezbe vv, Grad grad, Clanarina clanarina, Sala sala) {
+    public Trening(int trid, Trener trener, Polaznik polaznik, VrstaVezbe vv, Grad grad, Clanarina clanarina, Sala sala) {
         this.trid = trid;
-        this.trenenr = trenenr;
+        this.trener = trener;
         this.polaznik = polaznik;
         this.vv = vv;
         this.grad = grad;
@@ -93,7 +93,7 @@ public class Trening implements Serializable {
      */
     
     public Trener getTrenenr() {
-        return trenenr;
+        return trener;
     }
     /**
      * Postavlja trenera treninga na novu vrednost.
@@ -101,8 +101,8 @@ public class Trening implements Serializable {
      * @param trener Trener koji je zaduzen za trening kao Trener vrednost.
      */
 
-    public void setTrenenr(Trener trenenr) {
-        this.trenenr = trenenr;
+    public void setTrenenr(Trener trener) {
+        this.trener = trener;
     }
     /**
      * Vraca polaznika treninga.
