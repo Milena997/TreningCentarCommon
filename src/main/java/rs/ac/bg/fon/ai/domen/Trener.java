@@ -6,35 +6,40 @@ import java.util.Objects;
 public class Trener implements Serializable{
 
     private int tid;
-    private String korisnickoIme;
-    private String sifra;
   
-    public Trener(int tid, String ime, String prezime) {
+    private String korisnickoIme;
+ 
+    private String sifra;
+   
+    public Trener() {
+    }
+    
+  
+    public Trener(int tid, String ime, String sifra) {
         this.tid = tid;
         this.korisnickoIme = ime;
-        this.sifra = prezime;
+        this.sifra = sifra;
        
     }
 
-    public Trener() {
-    }
-
+  
     public int getTid() {
         return tid;
     }
 
+
     public void setTid(int tid) {
         this.tid = tid;
     }
-
+ 
     public String getKorisnickoIme() {
         return korisnickoIme;
     }
-
+  
     public void setKorisnickoIme(String korisnickoIme) {
         this.korisnickoIme = korisnickoIme;
     }
-
+  
     public String getSifra() {
         return sifra;
     }
